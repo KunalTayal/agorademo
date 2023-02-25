@@ -92,8 +92,8 @@ class RtcRepo {
     _channel?.join();
     engine.joinChannel(
       token:
-          "007eJxTYCh5WHZAeUPd91M3Gt75CKhMff6tyCLPUJiLWfiV7S2VkEwFBjODlBRzo+RUAwtzUxODFKPERBPTpBTDNFNT8zTLRMukNNHvyQ2BjAziJXdYGBkgEMTnYkgsLinKVyhJLS5hYAAAEPshYA==",
-      channelId: "astro test",
+          "007eJxTYKiQ/mhs8f91gVTYsUu+Vt0125PPKc5lu/pXZNafqXqb97cqMBgbJxuapiUZWxqaGZgYGqVaWBikmVpYGpoaGiempqRYivD9Sm4IZGQwvDqJiZEBAkF8FobiksQiBgYAdD4ftA==",
+      channelId: "star",
       uid: uid,
       options: ChannelMediaOptions(),
     );

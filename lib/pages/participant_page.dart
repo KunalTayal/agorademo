@@ -117,7 +117,7 @@ class _BroadcastPageState extends State<ParticipantPage> {
         "UID when joining int ${widget.uid} and string ${widget.uid.toString()}");
     await _engine.joinChannel(
       token:
-          "007eJxTYPC1/Tm/0Ov3yn6Z9bOVvp6V1Evm6Lx1bVvVRbXgmG+z9mkoMKSYmyUbm6eaJJuYGJlYJiZZJpsbJhkkGSQbmBsaJ6YmX93VktwQyMgw5epnZkYGRgYWIAbxmcAkM5hkAZPcDI7FJfklqcUlmXnpDAwAQkknVA==",
+          "007eJxTYKiQ/mhs8f91gVTYsUu+Vt0125PPKc5lu/pXZNafqXqb97cqMBgbJxuapiUZWxqaGZgYGqVaWBikmVpYGpoaGiempqRYivD9Sm4IZGQwvDqJiZEBAkF8FobiksQiBgYAdD4ftA==",
       channelId: widget.channelName,
       uid: widget.uid,
       options: ChannelMediaOptions(),
@@ -179,11 +179,11 @@ class _BroadcastPageState extends State<ParticipantPage> {
   Future<void> _initAgora() async {
     _engine = createAgoraRtcEngine();
     await _engine.initialize(const RtcEngineContext(
-      appId: "d76c37e4c44249ab9c71b0b0c0713aec",
+      appId: "33c15fb39160412e880f5891513aedd9",
       channelProfile: ChannelProfileType.channelProfileLiveBroadcasting,
     ));
     _client =
-        await AgoraRtmClient.createInstance("d76c37e4c44249ab9c71b0b0c0713aec");
+        await AgoraRtmClient.createInstance("33c15fb39160412e880f5891513aedd9");
 
     await _engine.enableVideo();
     await _engine.muteLocalAudioStream(true);

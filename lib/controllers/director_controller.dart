@@ -22,11 +22,11 @@ class DirectorController extends StateNotifier<DirectorModel> {
   Future<void> _initialize() async {
     RtcEngine _engine = createAgoraRtcEngine();
     await _engine.initialize(const RtcEngineContext(
-      appId: "60dd72ce087540d2aa45bd1f557f9a9b",
+      appId: "33c15fb39160412e880f5891513aedd9",
       channelProfile: ChannelProfileType.channelProfileLiveBroadcasting,
     ));
     AgoraRtmClient? _client =
-        await AgoraRtmClient.createInstance("60dd72ce087540d2aa45bd1f557f9a9b");
+        await AgoraRtmClient.createInstance("33c15fb39160412e880f5891513aedd9");
     state = DirectorModel(engine: _engine, client: _client);
   }
 
